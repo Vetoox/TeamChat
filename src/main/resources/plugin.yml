@@ -1,0 +1,9 @@
+name: '${project.artifactId}'
+version: '${project.version}'
+author: moritz
+
+main: de.moritz.teamchat.Teamchat
+
+commands:
+  teamchat:
+  tc:
