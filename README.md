@@ -1,6 +1,6 @@
 ## [Minecraft TeamChat](#tcpserver)
 
-[![Language][(https://img.shields.io/badge/Language-C%2B%2B-blue)]()](https://img.shields.io/badge/Language-Java-red)]()
+[![Language](https://img.shields.io/badge/Language-Java-red)]()
 [![License](https://img.shields.io/github/license/vhesener/Closures.svg?style=plastic&colorB=68B7EB)]()
 
 
