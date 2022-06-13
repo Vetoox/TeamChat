@@ -9,7 +9,7 @@ This is a Minecraft TeamChat Plugin
 ***
 ## [Setup](#usage-overview)
 
-Change IP and Port in main()
+/
 
 ```swift
 
