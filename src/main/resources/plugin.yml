@@ -7,3 +7,5 @@ main: de.moritz.teamchat.Teamchat
 commands:
   teamchat:
   tc:
+  tc-reload:
+  teamchat-reload:

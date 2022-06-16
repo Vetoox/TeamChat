@@ -12,13 +12,12 @@ public class TeamChatCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
 
-        final String blocked = Teamchat.getPrefix() + "§cDazu hast du keine Rechte§7!";
         final Player player = (Player) sender;
         String message = "";
 
         if(sender instanceof Player) {
 
-            if(player.hasPermission("system.teamchat")) {
+            if(player.hasPermission(Teamchat.getPermission())) {
 
                 if(args.length >= 1) {
 
@@ -26,7 +25,7 @@ public class TeamChatCommand implements CommandExecutor {
                         message = message + args[i] + " ";
                     }
                     for(Player teamPlayer : Bukkit.getOnlinePlayers()) {
-                        if(teamPlayer.hasPermission("system.teamchat")) {
+                        if(teamPlayer.hasPermission(Teamchat.getPermission())) {
                             teamPlayer.sendMessage(Teamchat.getPrefix() + player.getName() + " §7➟ §r " + message);
                         }
                     }
@@ -36,7 +35,7 @@ public class TeamChatCommand implements CommandExecutor {
                 }
 
             } else {
-                player.sendMessage(blocked);
+                player.sendMessage(Teamchat.getPrefix() + "§cDazu hast du keine Rechte§7!");
             }
         }
 
